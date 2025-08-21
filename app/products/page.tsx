@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -11,6 +11,8 @@ import { SharedHeader } from "@/components/shared-header"
 import { SharedFooter } from "@/components/shared-footer"
 import { ProductVideos } from "@/components/product-videos"
 import { ExitIntentPopup } from "@/components/exit-intent-popup"
+
+export const dynamic = 'force-dynamic'
 
 // Helper function to get product image path
 const getProductImage = (brand: string, productName: string) => {
@@ -197,7 +199,7 @@ const products = [
   { brand: "LIVFAST", name: "High Performance 2000VA", model: "Performance 2000", description: "2000VA, enhanced efficiency" }
 ]
 
-export default function ProductsPage() {
+function ProductsPageContent() {
   const searchParams = useSearchParams()
   const urlBrand = searchParams.get('brand')
   
@@ -333,8 +335,16 @@ export default function ProductsPage() {
 
       <SharedFooter />
       
-      {/* SEO Components */}
-      <ExitIntentPopup />
-    </div>
+             {/* SEO Components */}
+       <ExitIntentPopup />
+     </div>
+   )
+ }
+
+export default function ProductsPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ProductsPageContent />
+    </Suspense>
   )
 }

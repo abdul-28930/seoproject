@@ -9,6 +9,8 @@ import { Input } from "@/components/ui/input"
 import { Phone, Search } from "lucide-react"
 import { SharedHeader } from "@/components/shared-header"
 import { SharedFooter } from "@/components/shared-footer"
+import { ProductVideos } from "@/components/product-videos"
+import { ExitIntentPopup } from "@/components/exit-intent-popup"
 
 // Helper function to get product image path
 const getProductImage = (brand: string, productName: string) => {
@@ -223,6 +225,17 @@ export default function ProductsPage() {
     <div className="min-h-screen bg-background">
       <SharedHeader />
 
+      {/* Breadcrumbs */}
+      <section className="pt-16 pb-4 px-4">
+        <div className="container mx-auto">
+          <nav className="flex items-center space-x-2 text-sm text-muted-foreground">
+            <a href="/" className="hover:text-primary transition-colors">Home</a>
+            <span>/</span>
+            <span className="text-foreground">Products</span>
+          </nav>
+        </div>
+      </section>
+
       {/* Products Hero with Search and Filter */}
       <section className="pt-16 pb-8 px-4">
         <div className="container mx-auto text-center">
@@ -316,7 +329,12 @@ export default function ProductsPage() {
         </div>
       </section>
 
+      <ProductVideos />
+
       <SharedFooter />
+      
+      {/* SEO Components */}
+      <ExitIntentPopup />
     </div>
   )
 }

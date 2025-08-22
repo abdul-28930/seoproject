@@ -57,6 +57,19 @@ const localities = [
   { name: "Arumbakkam", slug: "arumbakkam" },
   { name: "Koyambedu", slug: "koyambedu" },
   { name: "Madhuravayal", slug: "madhuravayal" },
+  { name: "Kadhirvedu", slug: "kadhirvedu" },
+  { name: "Kavangarai", slug: "kavangarai" },
+  { name: "Thiruniruyur", slug: "thiruniruyur" },
+  { name: "Thiruvanmiyur", slug: "thiruvanmiyur" },
+  { name: "Tharamani", slug: "tharamani" },
+  { name: "Sholinganallur", slug: "sholinganallur" },
+  { name: "Thuraipakkam", slug: "thuraipakkam" },
+  { name: "Alapakkam", slug: "alapakkam" },
+  { name: "Valasaravakkam", slug: "valasaravakkam" },
+  { name: "Virugampakkam", slug: "virugampakkam" },
+  { name: "Mathur", slug: "mathur" },
+  { name: "Angaputhur", slug: "angaputhur" },
+  { name: "Ramapuram", slug: "ramapuram" },
 ]
 
 export const metadata: Metadata = {

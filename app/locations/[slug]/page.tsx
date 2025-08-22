@@ -329,6 +329,84 @@ const LOCATIONS: Record<string, { name: string; intro: string; description: stri
     description: "Reliable inverter solutions in Madhuravayal, Chennai. Professional installation and maintenance for uninterrupted power supply.",
     keywords: "inverter installation Madhuravayal, inverter service Madhuravayal, trusted inverter Madhuravayal"
   },
+  kadhirvedu: { 
+    name: "Kadhirvedu", 
+    intro: "Professional inverter services in Kadhirvedu.",
+    description: "Expert inverter installation and maintenance in Kadhirvedu, Chennai. Reliable backup power solutions for homes and businesses.",
+    keywords: "inverter installation Kadhirvedu, inverter service Kadhirvedu, backup power Kadhirvedu, inverter repair Kadhirvedu"
+  },
+  kavangarai: { 
+    name: "Kavangarai", 
+    intro: "Quality inverter solutions in Kavangarai.",
+    description: "Premium inverter services in Kavangarai, Chennai. Professional installation and maintenance for reliable power backup.",
+    keywords: "inverter installation Kavangarai, inverter service Kavangarai, quality inverter Kavangarai, reliable power Kavangarai"
+  },
+  thiruniruyur: { 
+    name: "Thiruniruyur", 
+    intro: "Trusted inverter installation in Thiruniruyur.",
+    description: "Reliable inverter services in Thiruniruyur, Chennai. Expert installation and maintenance for uninterrupted power supply.",
+    keywords: "inverter installation Thiruniruyur, inverter service Thiruniruyur, trusted inverter Thiruniruyur, power backup Thiruniruyur"
+  },
+  thiruvanmiyur: { 
+    name: "Thiruvanmiyur", 
+    intro: "Expert inverter services in Thiruvanmiyur.",
+    description: "Professional inverter solutions in Thiruvanmiyur, Chennai. Complete power backup solutions with certified installation.",
+    keywords: "inverter installation Thiruvanmiyur, inverter service Thiruvanmiyur, expert inverter Thiruvanmiyur, power solutions Thiruvanmiyur"
+  },
+  tharamani: { 
+    name: "Tharamani", 
+    intro: "IT corridor inverter solutions in Tharamani.",
+    description: "Specialized inverter services for IT companies and offices in Tharamani, Chennai. High-performance backup power systems.",
+    keywords: "inverter installation Tharamani, IT inverter Tharamani, office inverter Tharamani, commercial inverter Tharamani"
+  },
+  sholinganallur: { 
+    name: "Sholinganallur", 
+    intro: "Premium inverter services in Sholinganallur.",
+    description: "High-quality inverter installation and service in Sholinganallur, Chennai. Professional solutions for residential and commercial needs.",
+    keywords: "inverter installation Sholinganallur, inverter service Sholinganallur, premium inverter Sholinganallur, residential inverter Sholinganallur"
+  },
+  thuraipakkam: { 
+    name: "Thuraipakkam", 
+    intro: "Complete inverter solutions in Thuraipakkam.",
+    description: "Full-service inverter solutions in Thuraipakkam, Chennai. Installation, repair, and maintenance for all your power backup needs.",
+    keywords: "inverter installation Thuraipakkam, inverter service Thuraipakkam, complete inverter solutions Thuraipakkam"
+  },
+  alapakkam: { 
+    name: "Alapakkam", 
+    intro: "Professional inverter installation in Alapakkam.",
+    description: "Expert inverter services in Alapakkam, Chennai. Reliable backup power solutions with certified technicians.",
+    keywords: "inverter installation Alapakkam, inverter service Alapakkam, professional inverter Alapakkam, backup power Alapakkam"
+  },
+  valasaravakkam: { 
+    name: "Valasaravakkam", 
+    intro: "Quality inverter solutions in Valasaravakkam.",
+    description: "Premium inverter services in Valasaravakkam, Chennai. Professional installation and maintenance for reliable power backup.",
+    keywords: "inverter installation Valasaravakkam, inverter service Valasaravakkam, quality inverter Valasaravakkam"
+  },
+  virugampakkam: { 
+    name: "Virugampakkam", 
+    intro: "Trusted inverter services in Virugampakkam.",
+    description: "Reliable inverter solutions in Virugampakkam, Chennai. Professional installation and maintenance for uninterrupted power supply.",
+    keywords: "inverter installation Virugampakkam, inverter service Virugampakkam, trusted inverter Virugampakkam"
+  },
+  mathur: { 
+    name: "Mathur", 
+    intro: "Expert inverter installation in Mathur.",
+    description: "Professional inverter services in Mathur, Chennai. Complete power backup solutions with professional installation.",
+    keywords: "inverter installation Mathur, inverter service Mathur, expert inverter Mathur, power backup Mathur"
+  },
+  angaputhur: { 
+    name: "Angaputhur", 
+    intro: "Complete inverter solutions in Angaputhur.",
+    description: "Full-service inverter solutions in Angaputhur, Chennai. Installation, repair, and maintenance for all your power backup needs.",
+    keywords: "inverter installation Angaputhur, inverter service Angaputhur, complete inverter solutions Angaputhur"
+  },
+  ramapuram: { 
+    name: "Ramapuram", 
+    intro: "Professional inverter services in Ramapuram.",
+    description: "Expert inverter solutions in Ramapuram, Chennai. Reliable backup power solutions for homes and commercial establishments.",
+    keywords: "inverter installation Ramapuram, inverter service Ramapuram, professional inverter Ramapuram, commercial inverter Ramapuram"
+  },
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
